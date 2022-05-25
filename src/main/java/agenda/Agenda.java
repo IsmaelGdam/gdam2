@@ -15,7 +15,16 @@ public class Agenda {
     private HashMap<String, Contacto> contactos = new HashMap();
     private static int n = 0;
     private static int count = 0;
+    private String nombre;
     
+    public Agenda(String name){
+        
+        if(name != ""){
+            this.nombre = name;
+        }else{
+            this.nombre = "Untitled";
+        }
+    }
     /**
      * Añade un nuevo contacto
      * @param contacto Contacto que queremos añadir
