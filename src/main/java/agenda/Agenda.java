@@ -25,6 +25,11 @@ public class Agenda {
             this.nombre = "Untitled";
         }
     }
+
+    Agenda()
+    {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     /**
      * Añade un nuevo contacto
      * @param contacto Contacto que queremos añadir
