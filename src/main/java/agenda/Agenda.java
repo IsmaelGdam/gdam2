@@ -87,6 +87,25 @@ public class Agenda {
         contactosList.addAll(contactos.values());
         return contactosList;
     }
+    public static void ListaAgenda(Agenda a){
+    
+        ArrayList<Contacto> Listado = new ArrayList<>();
+        Listado = a.getContactos();
+        System.out.print("AGENDA: ");
+        System.out.print(a.getnombre(a));
+        System.out.println("\t\tNum.Contactos:"+Listado.size());
+        System.out.format("%-24s%-15s%-15s\n", "eMail","Teléfono","Nombre");
+        System.out.println("-----------------------------------------------------               ");
+        for (Contacto c : Listado){
+            System.out.format("%-24s%-15s%-15s\n",c.getEmail(),c.getTelefono(),c.               getNombre());
+        }
+        System.out.println("-----------------------------------------------------           ");
+    }
+
+    private String getnombre(Agenda a)
+    {
+        return nombre;
+    }
     
     
 
